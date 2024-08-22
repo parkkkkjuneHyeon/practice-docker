@@ -6,7 +6,3 @@ services:
       mode: replicated
     ports:
       - 8000:8080
-    network:
-      chat-net:
-networks:
-  chat-net:
