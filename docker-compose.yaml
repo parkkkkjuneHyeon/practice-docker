@@ -1,6 +1,7 @@
 services:
   cht-was:
-    build: .
+    build:
+      context: .
     dockerfile: Dockerfile
     deploy:
       replicas: 3
