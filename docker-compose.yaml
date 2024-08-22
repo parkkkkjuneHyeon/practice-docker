@@ -1,6 +1,6 @@
 services:
   chat-was:
-    image: gktkwk/chatroom
+    image: gktkwk/chatroom:v1.0
     deploy:
       replicas: 3
       mode: replicated
