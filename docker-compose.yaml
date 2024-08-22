@@ -1,8 +1,6 @@
 services:
-  cht-was:
-    build:
-      context: .
-    dockerfile: Dockerfile
+  chat-was:
+    image: gktkwk/chatroom
     deploy:
       replicas: 3
       mode: replicated
