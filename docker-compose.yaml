@@ -1,0 +1,13 @@
+services:
+  cht-was:
+    build: .
+    dockerfile: Dockerfile
+    deploy:
+      replicas: 3
+      mode: replicated
+    ports:
+      - 8000:8080
+    network:
+      chat-net:
+networks:
+  chat-net:
