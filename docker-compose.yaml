@@ -1,10 +1,10 @@
 services:
   chat-was:
     image: gktkwk/chatroom:v1.0
+    ports:
+      - "18000:8080"
+      - "18001:8080"
+      - "18002:8080"
     deploy:
       replicas: 3
       mode: replicated
-      ports:
-        - "18000:8080"
-        - "18001:8080"
-        - "18002:8080"
