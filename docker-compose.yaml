@@ -4,5 +4,7 @@ services:
     deploy:
       replicas: 3
       mode: replicated
-    ports:
-      - 18000:8080
+      ports:
+        - "18000:8080"
+        - "18001:8080"
+        - "18002:8080"
